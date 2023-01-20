@@ -7,4 +7,6 @@ Random rand = new Random();
 int randNumber = rand.Next(100, 1000);
 System.Console.WriteLine(randNumber);
 
-Console.Write($"{randNumber / 100}{randNumber % 10}");
+Console.Write($"{randNumber / 100}{randNumber % 10}"); // - если в дальнейшем не нужно использовать это число
+// если потребуется использовать число, нужно его сохранить так:
+// int newNumber = (randomNumber / 100) * 10 + randomNumber % 10;
